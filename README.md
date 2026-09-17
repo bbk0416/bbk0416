@@ -1,8 +1,8 @@
-# 배병권 — Vulnerability Management / Security Engineer
+# 배병권 | Vulnerability Management / Security Engineer
 
-육군 정보통신·사이버보안 실무 경험을 바탕으로 **취약점 식별 → 조치 추적 → 재검증 → 증빙**까지 이어지는 보안 운영과, 이를 코드·연구로 재현하는 작업을 해왔습니다.
+군에서 정보통신·사이버보안 업무를 하면서 취약점은 **찾는 것보다 실제 조치까지 끝내는 과정이 더 중요하다**고 느꼈습니다. 그래서 실무에서는 취약점 식별 이후 담당부서 협조, 조치 확인, 재검증까지 계속 추적했고, 개인 프로젝트도 이 경험과 연결되는 주제를 중심으로 만들고 있습니다.
 
-## Core evidence
+## 주요 경험
 
 - 취약점 **1,138건 식별**
 - **1,054건 조치 완료 확인**, 조치율 **92.6%**
@@ -12,31 +12,31 @@
 - CyberNet 2023 한국 우승팀 참가
 - Locked Shields 2023 참가
 
-## Selected projects
+## 대표 프로젝트
 
 ### [VulnFlow](https://github.com/bbk0416/vulnflow)
-Local-first vulnerability-remediation closeout workspace. Nessus·OpenVAS·CSV·XLSX 결과를 가져와 finding/asset 정규화, KEV·EPSS·자산 맥락 기반 우선순위, 담당자·기한·조치·재검증·승인·증빙 흐름을 다룹니다. 현재 **Free Public Beta**입니다.
+군에서 해왔던 취약점 조치 추적 업무를 민간 환경에서도 설명할 수 있는 형태로 옮겨 본 프로젝트입니다. Nessus·OpenVAS·CSV·XLSX 결과를 받아 자산과 취약점을 정리하고, 우선순위 판단부터 담당자 지정, 조치, 재검증, 승인과 증빙까지 이어지도록 만들었습니다. 현재는 **Free Public Beta**입니다.
 
 ### KillWeb
-Computers & Security에 게재된 단독저자 연구와 재현 아티팩트입니다. 보안 텔레메트리를 MITRE ATT&CK 기반 조사 그래프로 구성하고 재현 가능한 평가 절차를 다룹니다. 제품 상용화가 아니라 **출판 연구와 재현성 자료**가 핵심입니다.
+보안 이벤트가 흩어져 있으면 조사 과정에서 맥락을 놓치기 쉽다는 문제에서 시작한 연구입니다. 보안 텔레메트리를 MITRE ATT&CK 기준의 조사 그래프로 연결하고, 결과를 다시 재현해 볼 수 있도록 평가 절차와 자료를 함께 정리했습니다.
 
 - [논문 DOI](https://doi.org/10.1016/j.cose.2026.105085)
 - [재현성 자료(OSF)](https://osf.io/gzs7k/)
 
 ### [BreachScope](https://github.com/bbk0416/BreachScope)
-Windows Event Log 중심의 DFIR/triage 도구입니다. 정규화 → 규칙 탐지 → 상관분석 → 시나리오 → 케이스 → 리포트 흐름을 구현합니다. 현재 평가는 합성·통제 데이터 기반이며 실제 기업 환경의 탐지 정확도를 주장하지 않습니다.
+Windows Event Log를 분석하면서 개별 탐지 결과를 사건 흐름으로 이어 보기 위해 만든 DFIR 도구입니다. 로그 정규화, 규칙 탐지, 시간·세션 기준 상관분석, 시나리오와 케이스 정리, 리포트 생성을 한 흐름으로 묶었습니다. 현재 평가는 합성·통제 데이터 기준이며 실제 기업 환경의 탐지 정확도로 확대해서 말하지 않습니다.
 
 ### VulnSignal
-CISA KEV·EPSS·CPE를 활용한 vulnerability-intelligence 포트폴리오 MVP입니다. 조직별 자산·watchlist·alert, API key scope/rotation, audit event, PostgreSQL/Alembic, Docker staging을 구현했습니다. **Production SaaS 또는 고객 검증 완료 상태는 아닙니다.**
+KEV·EPSS·CPE를 실제 취약점 우선순위 판단에 어떻게 같이 쓸 수 있을지 확인해 본 프로젝트입니다. 조직별 자산과 watchlist, alert, API key 권한·교체, 감사기록, PostgreSQL/Alembic까지 다뤘습니다. 포트폴리오 MVP까지 만든 상태이고, 실제 고객이 사용하는 SaaS라고 보지는 않습니다.
 
-## Role-specific supporting work
+## 직무에 따라 꺼내 쓰는 프로젝트
 
-- **MCP-Guard** — MCP 기반 AI Agent 실행경계·정책 Blind Spot 검증 PoC, 2026 공모전 제출본 동결
-- **AuditSeal-CT** — ESP32-S3 기반 USB 감사 동글 프로토타입. 펌웨어·USB 네트워크·증적 봉인 구조 구현. 실기기 E2E 검증은 별도 완료 전까지 주장하지 않습니다.
-- **ORACLE-ZERO** — 합성 환경에서 방어조치 전후 공격경로를 비교하는 결정론적 counterfactual cyber-world MVP. 실제 침해확률 예측 모델이 아닙니다.
+- **MCP-Guard** — MCP 기반 AI Agent의 도구 권한과 실행경계 문제를 다룬 PoC. 2026 공모전 제출 완료
+- **AuditSeal-CT** — ESP32-S3 기반 USB 감사 동글 프로토타입. 펌웨어·USB 네트워크·증적 봉인 구조까지 구현했으며 실기기 E2E 검증은 아직 별도로 남아 있음
+- **ORACLE-ZERO** — 합성 환경에서 패치 전후 공격경로가 어떻게 바뀌는지 비교하는 시뮬레이터
 
-## Public portfolio
+## 포트폴리오
 
 [BBK Security Portfolio](https://bbk0416.github.io/bbk-security-portfolio/)
 
-> 공개 자료에는 검증 가능한 범위만 표시합니다. 합성 테스트·로컬 검증과 실제 사용자·실환경 검증을 구분하며, 비공개 군 내부자료·개인정보·취약점 원문은 공개하지 않습니다.
+공개 자료에는 확인할 수 있는 내용만 올립니다. 합성 테스트나 로컬 검증을 실제 사용자·운영 환경 검증처럼 표현하지 않고, 군 내부자료·개인정보·취약점 신고 원문은 공개하지 않습니다.
