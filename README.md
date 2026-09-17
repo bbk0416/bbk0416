@@ -17,8 +17,11 @@
 ### [VulnFlow](https://github.com/bbk0416/vulnflow)
 Local-first vulnerability-remediation closeout workspace. Nessus·OpenVAS·CSV·XLSX 결과를 가져와 finding/asset 정규화, KEV·EPSS·자산 맥락 기반 우선순위, 담당자·기한·조치·재검증·승인·증빙 흐름을 다룹니다. 현재 **Free Public Beta**입니다.
 
-### KillWeb / [Kill-Web-Builder](https://github.com/bbk0416/Kill-Web-Builder)
-Computers & Security에 게재된 단독저자 연구의 재현 아티팩트입니다. 보안 텔레메트리를 MITRE ATT&CK 기반 조사 그래프로 구성하고 재현 가능한 평가 절차를 다룹니다. 제품 상용화가 아니라 **출판 연구와 재현성 자료**가 핵심입니다.
+### KillWeb
+Computers & Security에 게재된 단독저자 연구와 재현 아티팩트입니다. 보안 텔레메트리를 MITRE ATT&CK 기반 조사 그래프로 구성하고 재현 가능한 평가 절차를 다룹니다. 제품 상용화가 아니라 **출판 연구와 재현성 자료**가 핵심입니다.
+
+- [논문 DOI](https://doi.org/10.1016/j.cose.2026.105085)
+- [재현성 자료(OSF)](https://osf.io/gzs7k/)
 
 ### [BreachScope](https://github.com/bbk0416/BreachScope)
 Windows Event Log 중심의 DFIR/triage 도구입니다. 정규화 → 규칙 탐지 → 상관분석 → 시나리오 → 케이스 → 리포트 흐름을 구현합니다. 현재 평가는 합성·통제 데이터 기반이며 실제 기업 환경의 탐지 정확도를 주장하지 않습니다.
